@@ -6,7 +6,7 @@ from app.db.models.blog import Blog
 from app.db.models.user import User
 from app.schemas import BlogCreate, BlogUpdate, Blog as BlogSchema, BlogListResponse
 from app.api import deps
-from app.services import cache
+from app.redis import cache
 
 router = APIRouter()
 

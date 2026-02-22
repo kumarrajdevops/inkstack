@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, Response
 from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.db.models.config import SystemConfig
-from app.services import cache
+from app.redis import cache
 from pydantic import BaseModel
 
 router = APIRouter()
